@@ -56,7 +56,9 @@
 Задача управления движения - отработка роботом заданной траектории. В качестве управляющих воздействий выступают линейная и угловая скорости движения робота. 
 В качестве обратных связей - рассогласование по углу между направлением робота и позицией точки на траектории, к которой в данный момент робот стремится (проще всего рассматривать точку на траектории в координатах робота), а также текущее положение и скорость движения.
 
-Для реализации системы управления проще всего использовать алгоритм Pure Pursuit, благодаря которому можно формировать заданное значение угловой скорости робота. Статья [полегче](https://github.com/sfedu-sdbcs/ugv_docs/blob/master/materials/coulter1992implementation.pdf) и [посложнее](https://www.researchgate.net/profile/Qiang_Ling/publication/261153511_Controller_design_and_implementation_for_a_differential_drive_wheeled_mobile_robot/links/555d3c1d08ae9963a1124347.pdf).
+Для реализации системы управления проще всего использовать алгоритм Pure Pursuit, благодаря которому можно формировать заданное значение угловой скорости робота. Статьи полегче [coulter1992implementation](https://github.com/sfedu-sdbcs/ugv_docs/blob/master/materials/coulter1992implementation.pdf), [kelly1994feedforward](https://www.ri.cmu.edu/pub_files/pub1/kelly_alonzo_1994_4/kelly_alonzo_1994_4.pdf) и посложнее [bethencourt2011controller](https://www.researchgate.net/profile/Qiang_Ling/publication/261153511_Controller_design_and_implementation_for_a_differential_drive_wheeled_mobile_robot/links/555d3c1d08ae9963a1124347.pdf).
+
+Для расчета требуемой линейной скорости движения необходимо выбирать значения скорости в зависимости от кривизны участка траектории. Более простым вариантом будет формирование зависимости скорости от рассогласования по углу, описанному выше (допустимо только при низкой скорости движения).
 
 Код размещать в репозиториях [планирования траектории](https://github.com/sfedu-sdbcs/planning) и [управления движением](https://github.com/sfedu-sdbcs/control).
 
