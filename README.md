@@ -69,10 +69,10 @@
 
 ### ROS
 
-[ROS: Robot Operating System](https://www.ros.org/) - гибкий открытый фреймворк для написания ПО для работы с роботизированными системами. Позволяет разрабатывать модульные системы и предоставляет механизм передачи данных между ними.
+[ROS: Robot Operating System](https://www.ros.org/) - гибкий открытый фреймворк для написания ПО роботизированных систем. Позволяет оборачивать код в узлы, а также предоставляет механизм передачи данных между этими узлами.
 
 [Курс на портале Stepik](https://stepik.org/course/3222/promo).
 
 ROS [Tutorials](http://wiki.ros.org/ROS/Tutorials) and [Documentation](http://wiki.ros.org/).
 
-Учебник по ROS: A Systematic Approach to Learning Robot Programming with ROS, Wyatt Newman.
+Учебник по ROS: [A Systematic Approach to Learning Robot Programming with ROS, Wyatt Newman](http://2.180.2.83:801/opac/temp/11422.pdf).
